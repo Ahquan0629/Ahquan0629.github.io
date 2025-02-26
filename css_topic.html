@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h2 {
+            color:tomato;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2.tengah{
+            text-align: center;
+        }
+        .bg-darks{
+            background-color: brown;
+        }
+        .text-whites{
+            color: white;
+        }
+
+        #content{
+            background-color: rgba(0, 195, 255, 0.36);
+            margin: 5px 10px 10px 5px;
+            padding: 5px;
+        }
+        .container .box p{
+            background-color: yellow;
+        }
+        .toUpperCase{
+            text-transform: uppercase;
+            text-decoration: line-through;
+        }
+        input[type="text"],[type="email"]
+        {
+            width:100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 60px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"]
+        {
+            background-color: darkblue;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover
+        {
+            background-color: springgreen;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="content">
+    <h1>Welcome to JTMK</h1>
+    <h2 class="tengah bg-darks text-whites">Selamat Datang ke JTMK</h2>
+    <h2 class="tengah">Hi!May I Help You</h2>
+
+    <input type="text" id="name" placeholder="Please Enter Your Name">
+    <input type="email" id="email" placeholder="Please Enter Your Email">
+    <P style="color: darkblue;font-size: 20px;">Track Offered</P>
+  
+    <p class="toUpperCase">Please select your track</p>
+    <ul>
+        <input type="checkbox" id="Software and Development" name="Software and Development" value="Software and Development">
+        <label for="Software and Development">Software and Development Track</label><br>
+        <input type="checkbox" id="Network System" name="Network System" value="Network System">
+        <label for="Network System">Network System Track</label><br>
+        <input type="checkbox" id="Data Visualization" name="Data Visualization" value="Data Visualization">
+        <label for="Data Visualization">Data Visualization Track</label><br>
+    </ul>
+
+    <button type="submit">Apply Here!</button>
+    
+</div>
+<div class="container">
+    <div class="box">
+        <p>Hello</p>
+    </div>
+
+</div>
+<footer>Copyright Ahquan</footer>
+</body>
+</html>
