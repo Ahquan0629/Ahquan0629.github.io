@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="content" style="width: 500px; height: 500px; border: 1px; border-style: dotted;">
+        <h1><span id = "Hello">My Name is  </span><span id="displayName"></span></h1>
+    </div>
+        
+           
+            <br></br>
+                    <button id="changeBlue" onclick="changeBlue()">Change Blue</button>
+            <br></br>
+                    <button id="changeRed" onclick="changeRed()">Change Red</button>
+            <br></br>
+                    <button id="changeGreen" onclick="changeGreen()">Change Green</button>
+            <br></br>
+                    <button id="changeNormal" onclick="changeNormal()">Change Normal</button>
+            <br></br>
+
+
+
+                <input type="text" id="fullname" placeholder="Enter your name">
+                    <button id="submit" onclick="submit()">Submit</button>
+                        <div id="info"></div>
+
+
+
+                                <script>
+                                            function changeBlue() {
+                                                let content = document.getElementById("content");
+                                                
+                                                content.style.background="blue";
+                                                content.style.color="white";
+                                                content.style.filter="blur(1px)";
+                                            }
+                                            
+                                            function changeRed() {
+                                                let content = document.getElementById("content");
+                                                
+                                                content.style.background="Red";
+                                                content.style.color="white";
+                                                content.style.filter="blur(1px)";
+                                            }
+
+                                            function changeGreen() {
+                                                let content = document.getElementById("content");
+                                                
+                                                content.style.background="Green";
+                                                content.style.color="white";
+                                                content.style.filter="blur(1px)";
+                                            }
+
+                                            function changeNormal() {
+                                                let content = document.getElementById("content");
+                                                
+                                                content.style.background="white";
+                                                content.style.color="black";
+                                                content.style.filter="blur(0px)";
+                                            }
+
+                                            function submit() {
+                                                let info = document.getElementById("info");
+                                                let fullname = document.getElementById("fullname").value;
+                                                let displayName = document.getElementById("displayName");
+                                                
+                                                info.innerHTML = "Hello " + fullname.toUpperCase() + " , Welcome to my page!  ";
+                                                displayName.innerHTML = fullname.toUpperCase();
+                                                document.getElementById("fullname").value = "";
+                                            }
+
+                                            let Hello = document.getElementById("Hello");{
+
+                                                Hello.onmouseover = function() {
+                                                    Hello.innerText = "Haii Nama Saya ";
+                                                    Hello.style.color = "red";
+                                                    Hello.style.fontSize = "30px";
+                                                }
+
+                                                Hello.onmouseout = function() {
+                                                    Hello.innerText = "Hello My Name is ";
+                                                    Hello.style.color = "black";
+                                                    Hello.style.fontSize = "30px";
+                                                }
+
+                                            }
+                                </script>
+</body>
+</html>
